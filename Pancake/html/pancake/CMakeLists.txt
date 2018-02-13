@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+project( pancake )
+find_package( OpenCV REQUIRED )
+add_executable( pancake pancake.c )
+target_link_libraries( pancake ${OpenCV_LIBS} )
